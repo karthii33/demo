@@ -11,7 +11,9 @@ const jwt = require('jsonwebtoken');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: "https://joyful-marshmallow-74cd52.netlify.app"
+}));
 app.use(express.json());
 
 // Auth Middleware
